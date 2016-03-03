@@ -13,7 +13,7 @@ def checkWinner(board, player):
 	(board['top-M'] == player and board['mid-M'] == player and board['low-M'] == player) #down middle
 	(board['top-R'] == player and board['mid-R'] == player and board['low-R'] == player) # down right
 	(board['top-L'] == player and board['top-M'] == player and board['top-R'] == player) # across top
-	(board['mid-L'] == player and board['mid-M'] == player and board['middle-R'] == player) # across middle
+	(board['mid-L'] == player and board['mid-M'] == player and board['mid-R'] == player) # across middle
 	(board['low-L'] == player and board['low-M'] == player and board['low-R'] == player) # across the bottom
 	(board['top-L'] == player and board['mid-M'] == player and board['low-R'] == player)
 	(board['top-R'] == player and board['mid-M'] == player and board['low-L'] == player))
