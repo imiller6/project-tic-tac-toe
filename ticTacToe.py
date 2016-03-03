@@ -9,7 +9,7 @@ def printBoard(board):
 def checkWinner(board, player):    
     print('Checking if ' + player + ' is a winner...')
     
-    return ((board['top-L'] == player and board['mid-L'] == player and board['low-L'] == player) # down left
+    return ((board['top-L'] == player and board['mid-L'] == player and board['low-L'] == player) or # down left
 	(board['top-M'] == player and board['mid-M'] == player and board['low-M'] == player) or #down middle
 	(board['top-R'] == player and board['mid-R'] == player and board['low-R'] == player) or # down right
 	(board['top-L'] == player and board['top-M'] == player and board['top-R'] == player) or # across top
